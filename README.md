@@ -10,6 +10,12 @@ A simple **Tip Calculator** app built using **Kotlin** and **Jetpack Compose**. 
   - I used **keyboardOptions** to modify the type of keyboard displayed to the user for numerical input. This ensured that only relevant keys were shown, enhancing the app's usability.
   - Additionally, the **keyboard action button** was customized (e.g., "Done" or "Next") to guide users through the form intuitively. Implementing this feature helped me understand how to provide better navigation through user inputs.
 
+ **Currency Localization**:
+  - The app dynamically adapts to the device's locale settings to display the results in the **country-specific currency**. For example:
+    - Users in the US see amounts in **USD ($)**.
+    - Users in India see amounts in **INR (₹)**.
+  - Implementing this feature required learning how to work with **userLocale** and **`NumberFormat`** to ensure correct formatting.
+
 - **Testing**:
   - I implemented **unit tests** to validate core business logic, such as calculating the tip amount based on different bill values and tip percentages.
   - **Instrumentation tests** were used to ensure the UI components, such as input fields and buttons, behaved correctly during user interactions.
